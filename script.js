@@ -22,3 +22,19 @@ let maria = {
 };
 
 console.log(niklas, maria);
+
+// Vi kan lägga till egenskaper på ett simpelt sätt någon av utav objekten. Det gör vi enklast genom punknotation.
+niklas.address = "Drottninggatan 20";
+
+// Vi kan även ändra på egenskaper i ett objekt. Det finns två sätt att göra detta på. Första är via punknotation.
+niklas.age = 31;
+
+// Det andra sättet är på ett arrayliknande sätt.
+niklas["age"] = 45;
+niklas["gender"] = "non-binary";
+
+// Vill vi ta borg en egenskap, vilket man sällan gör, istället brukar man sätta värdet till null eller 0 (om det är ett nummer) eller en tom sträng om det är en sträng.
+delete niklas.age;
+delete niklas["address"]
+
+console.log(niklas);
